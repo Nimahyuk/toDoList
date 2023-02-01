@@ -1,0 +1,274 @@
+html {
+    background: rgb(33, 37, 41);
+    background: linear-gradient(5deg, rgba(33, 37, 41, 1) 0%, rgba(52, 58, 64, 1) 100%);
+    min-height: 1000px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 100;
+}
+
+.top {
+    padding-top: 10px;
+    padding-right: 100px;
+    font-weight: 200;
+    font-size: 20px;
+    color: #E9ECEF;
+}
+
+.formTop {
+    text-align: right !important;
+}
+
+.box {
+    max-width: 400px;
+    margin: 30px auto 25px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+#heading {
+    background-color: transparent;
+    text-align: center;
+    color: #E9ECEF;
+    padding: 10px;
+    font-size: 40px;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+#subheading {
+    background-color: transparent;
+    text-align: center;
+    color: #E9ECEF;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+.hora {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.item {
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #6C757D;
+}
+
+.item:last-child {
+    border-bottom: 0;
+}
+
+input:checked+p {
+    text-decoration: line-through;
+    text-decoration-color: #343A40;
+}
+
+input[type="checkbox"] {
+    margin: 20px 20px 15px 10px;
+}
+
+.tasks {
+    margin: 0;
+    padding-left: 40px;
+    font-size: 20px;
+    font-weight: 200;
+    color: #DEE2E6;
+}
+
+.tasks::first-letter {
+    text-transform: uppercase;
+}
+
+form {
+    text-align: center;
+    margin-left: 20px;
+}
+
+.button {
+    min-height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #CED4DA;
+    color: #343A40;
+    font-size: 30px;
+    border-width: 0;
+    margin-left: 10px;
+    transition: transform .5s;
+}
+
+.button:hover {
+    transform: scale(1.3) rotate(0.5turn);
+}
+
+input[type="text"] {
+    text-align: center;
+    height: 60px;
+    top: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #343A40;
+    font-size: 20px;
+    font-weight: 100;
+    width: 313px;
+    color: #E9ECEF;
+
+}
+
+input[type="text"]:focus {
+    outline: none;
+    box-shadow: inset 0 -3px 0 0 #6C757D;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+::placeholder {
+    color: #E9ECEF;
+    font-weight: 100;
+    opacity: 1;
+}
+
+footer {
+    color: #DEE2E6;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 15px;
+}
+
+.footerLink {
+    color: #DEE2E6;
+    text-decoration: none;
+    font-weight: 400;
+    transition: 0.5s;
+}
+
+.footerLink:hover {
+    font-size: 20px;
+}
+
+.link {
+    color: rgba(0, 0, 0, 0.702);
+    text-align: center;
+    display: block;
+}
+
+
+
+.itemList {
+    text-transform: uppercase;
+    padding: 20px;
+    color: #E9ECEF;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 200;
+    text-shadow: 1px 1px 9px rgba(0, 0, 0, 0.72);
+    transition: 0.5s;
+
+}
+
+.itemList:hover {
+    font-size: 30px;
+}
+
+.listas {
+    text-align: center;
+    margin-top: 60px;
+    font-weight: 100;
+}
+
+.formListas {
+    margin-top: 50px;
+}
+
+.contacto {
+    transition: 0.5s;
+    margin-right: 10px;
+    color: #DEE2E6;
+    text-decoration: none;
+    background-color: transparent;
+    border-color: transparent;
+    padding-top: 50px;
+    font-size: 20px;
+    font-weight: 100;
+    font-family: 'Roboto Slab', serif;
+}
+
+.contacto:hover {
+    font-size: 30px;
+}
+
+.btnCheck {
+    background: url(bin.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-color: transparent;
+    height: 25px;
+    width: 25px;
+    transition: 0.5s;
+}
+
+.btnCheck:hover {
+    transform: scale(1.2);
+    background: url(bin-open.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+}
+
+.contactPage {
+    text-align: center;
+    color: #E9ECEF;
+    font-size: 20px;
+    font-weight: 200;
+    text-shadow: 1px 1px 9px rgba(0, 0, 0, 0.72);
+}
+
+.js {
+    padding: 20px;
+    max-height: 30px;
+    content: url(js.png);
+    transition: 0.5s;
+}
+
+.js:hover{
+    max-height: 50px;
+}
+
+.node {
+    padding: 20px;
+    max-height: 30px;
+    content: url(nodo-js.png);
+    transition: 0.5s;
+}
+
+.node:hover {
+    max-height: 50px;
+}
+
+.html5 {
+    padding: 20px;
+    max-height: 30px;
+    content: url(html-5.png);
+    transition: 0.5s;
+}
+
+.html5:hover {
+    max-height: 50px;
+}
+
+.css3 {
+    padding: 20px;
+    max-height: 30px;
+    content: url(css-3.png);
+    transition: 0.5s;
+}
+
+.css3:hover {
+    max-height: 50px;
+}

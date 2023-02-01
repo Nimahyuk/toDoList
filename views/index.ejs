@@ -1,0 +1,47 @@
+<%- include("partials/header");-%>
+
+    <div class="top">
+        <form class="formTop" action="/contact" method="post">
+            <button type="submit" class="contacto">CONTACT</button>
+        </form>
+    </div>
+    <h2 id="heading">
+        <%= title %>
+    </h2>
+
+    <h3 class="hora">
+        <%=hora%>:<%=min%>
+    </h3>
+    <div class="box">
+        <% tasks.forEach(function(task){ %>
+            <form method="post" action="/delete" class="item">
+                <div class="item">
+                    <button class="btnCheck" name="checkbox" value="<%=task._id%>" />
+                    <input type="hidden" value="<%=buttonValue%>" name="listname" autofocus>
+                    <p class="tasks">
+                        <%=task.name%>
+                    </p>
+
+                </div>
+            </form>
+            <% }) %>
+                <form method="post" action="/task" class="item">
+                    <input type="text" name="nuevaTarea" autocomplete="off" placeholder="Inserte un tarea">
+                    <button class="button" type="submit" name="button" value=<%=buttonValue%>>+</button>
+                </form>
+    </div>
+    <div class="listas">
+        <a class="itemList" href="/">GENERAL</a>
+        <a class="itemList" href="/work">WORK</a>
+        <% listas.forEach((item)=> { %>
+            <a class="itemList" href="/<%= item.name %> ">
+                <%= item.name %>
+            </a>
+            <% }) %>
+                <form class="formListas" method="post" action="/lista">
+                    <input type="text" class="input" name="nuevaLista" autocomplete="off" placeholder="Nueva lista">
+                    <button class="button" type="submit" name="button">+</button>
+                </form>
+    </div>
+
+    <%- include("partials/footer");-%>
